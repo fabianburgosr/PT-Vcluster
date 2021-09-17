@@ -4,6 +4,7 @@ metadata:
   labels:
     some-label: pod
 spec:
+  serviceAccountName: jenkins
   containers:
     - name: helm
       image: lachlanevenson/k8s-helm:v3.1.1
