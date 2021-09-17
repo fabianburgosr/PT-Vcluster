@@ -1,0 +1,7 @@
+vcluster:
+  image: rancher/k3s:v1.19.5-k3s2
+  extraArgs:
+    - --service-cidr=10.245.0.0/16
+syncer:
+  extraArgs:
+  - --tls-san=143.198.152.114,143.198.152.155,143.198.100.135,10.124.0.4,10.124.0.8,10.124.0.9
