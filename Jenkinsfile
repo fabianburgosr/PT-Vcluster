@@ -6,7 +6,7 @@ environment {
   
   	agent {
     		kubernetes {
-            cloud 'vcluster2'
+            cloud 'kuberneteshostcluster'
       			inheritFrom 'deployvcluster'
       			idleMinutes 5  // how long the pod will live after no jobs have run on it
       			yamlFile 'build-pod.yaml'  // path to the pod definition relative to the root of our project 
