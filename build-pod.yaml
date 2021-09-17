@@ -10,10 +10,10 @@ spec:
       resources:  # limits the resources your build contaienr
         requests:
           memory: "128Mi"
-          cpu: "100m"
+          cpu: "050m"
         limits:
           memory: "512Mi"
-          cpu: "200m" 
+          cpu: "100m" 
       command:
         - cat
       tty: true
