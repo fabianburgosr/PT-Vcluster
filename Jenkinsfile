@@ -26,11 +26,7 @@ environment {
         		    }*/
         		    
         		    //workaround=> use helm hasta que actualicen el plugin kubernetesDeploy
-        		    //sh '/tmp/test.sh helm repo add nginx-stable https://helm.nginx.com/stable'
-        		    //sh '/tmp/test.sh helm repo update'
-        		    //sh '/tmp/test.sh helm install nginx-ingress-${chartsName} nginx-stable/nginx-ingress --set controller.publishService.enabled=true,controller.hostNetwork=true,controller.service.type="" --namespace wso2mi --kubeconfig=/tmp/.kube/config'
         		    sh 'helm upgrade --install ${nameVcluster} vcluster --values vcluster.yaml --repo https://charts.loft.sh --namespace  ${nameSpace} --repository-config='''
-        		    //sh '/tmp/test.sh  helm install ${chartsName} ./helmcharts/${chartsName} --namespace wso2mi --dry-run --debug --kubeconfig=/tmp/.kube/config'
             }
              }   
            }
