@@ -26,7 +26,7 @@ environment {
         		    }*/
         		    
         		    //workaround=> use helm hasta que actualicen el plugin kubernetesDeploy
-        		    sh 'helm upgrade --install ${nameVcluster} vcluster --values vcluster.yaml --repo https://charts.loft.sh --namespace ${nameSpace}'
+        		    sh 'helm install ${nameVcluster} vcluster --values vcluster.yaml --repo https://charts.loft.sh --namespace ${nameSpace}'
             }
              }   
            }
