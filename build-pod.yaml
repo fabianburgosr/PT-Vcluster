@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    some-label: pod
+spec:
+  containers:
+    - name: helm
+      image: lachlanevenson/k8s-helm:v3.1.1
+      resources:  # limits the resources your build contaienr
+        requests:
+          memory: "128Mi"
+          cpu: "100m"
+        limits:
+          memory: "512Mi"
+          cpu: "200m" 
+      command:
+        - cat
+      tty: true
