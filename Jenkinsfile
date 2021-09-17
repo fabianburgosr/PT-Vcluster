@@ -15,7 +15,7 @@ environment {
   	}
  
     stages {          
-           stage('Deploy Rabbitmq to K8S') {
+      stage('Deploy Vcluster-xxx ${nameVcluster} to K8S') {
              
             steps {
                 echo 'Deploy RabbitMQ to Admin K8s Cluster ....'
