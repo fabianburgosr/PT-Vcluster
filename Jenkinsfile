@@ -15,10 +15,10 @@ environment {
   	}
  
     stages {          
-      stage('Deploy Vcluster-xxx ${nameVcluster} to K8S') {
+      stage('Deploy Vcluster-xxx to K8S') {
              
             steps {
-                echo 'Deploy RabbitMQ to Admin K8s Cluster ....'
+                echo 'Deploy Vcluster-xxx to K8S Cluster ....'
               container('helm'){
                 /* Funciona con el plugin de Kubernetes deployment de Azure -Actualmente tiene un bug-
                     script {
